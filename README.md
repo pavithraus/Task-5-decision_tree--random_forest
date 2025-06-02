@@ -1,6 +1,6 @@
 # Task-5-Decision Trees and Random Forests(Heart Disease Prediction using Tree-Based Models)
 
-       This project applies **Decision Tree** and **Random Forest** models for **Classification** and **Regression** tasks using the **Heart Disease dataset**. The goal is to explore and evaluate tree-based models to predict heart-related outcomes and understand key feature contributions.
+This project applies **Decision Tree** and **Random Forest** models for **Classification** and **Regression** tasks using the **Heart Disease dataset**. The goal is to explore and evaluate tree-based models to predict heart-related outcomes and understand key feature contributions.
 
 ---
 
@@ -17,7 +17,7 @@
 
 ##  Dataset Used
 
-**Dataset: [Heart_Disease.csv]**https://github.com/pavithraus/Task-5-decision_tree--random_forest/blob/main/Heart_Disease.csv
+**Dataset: [Heart_Disease.csv] **https://github.com/pavithraus/Task-5-decision_tree--random_forest/blob/main/Heart_Disease.csv
 
 **Key Features:**
 
@@ -50,13 +50,13 @@
 
 ### 2. Classification
 
-** File:** `heart_classification.py`  
-** Goal:** Predict heart disease (`target`)  
-** Models:**  
+**File:** `heart_classification.py`  
+**Goal:** Predict heart disease (`target`)  
+**Models:**  
 - `DecisionTreeClassifier`  
 - `RandomForestClassifier`
 
-** Steps:**
+**Steps:**
 
 - Split data into train/test sets
 - Tune `max_depth`, `n_estimators` using `GridSearchCV`
@@ -71,13 +71,13 @@
 
 ### 3. Regression
 
-** File:** `heart_regression.py`  
-** Goal:** Predict cholesterol level (`chol`)  
-** Models:**  
+**File:** `heart_regression.py`  
+**Goal:** Predict cholesterol level (`chol`)  
+**Models:**  
 - `DecisionTreeRegressor`  
 - `RandomForestRegressor`
 
-** Steps:**
+**Steps:**
 
 - Use same split and scaling
 - Tune hyperparameters via `GridSearchCV`
@@ -154,6 +154,3 @@ Thank you **Elevate Labs**
 
 ---
 
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
