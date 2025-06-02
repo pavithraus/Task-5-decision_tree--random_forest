@@ -21,8 +21,8 @@ This project applies **Decision Tree** and **Random Forest** models for **Classi
 
 **Key Features:**
 
-- `age`, `sex`, `cp`, `chol`, `thalach`, `oldpeak`, etc.
-- `target`: Indicates presence (1) or absence (0) of heart disease.
+- age, sex, cp, chol, thalach, oldpeak, etc.
+- target: Indicates presence (1) or absence (0) of heart disease.
 
 ---
 
@@ -42,51 +42,51 @@ This project applies **Decision Tree** and **Random Forest** models for **Classi
 
 ### 1. Data Preprocessing
 
-- Load and clean data using `pandas`.
-- Normalize features with `StandardScaler`.
+- Load and clean data using pandas.
+- Normalize features with StandardScaler.
 - Encode if needed (no categorical encoding required in this dataset).
 
 ---
 
 ### 2. Classification
 
-**File:** `heart_classification.py`  
-**Goal:** Predict heart disease (`target`)  
+**File:** heart_classification.py  
+**Goal:** Predict heart disease (target)  
 **Models:**  
-- `DecisionTreeClassifier`  
-- `RandomForestClassifier`
+- DecisionTreeClassifier  
+- RandomForestClassifier
 
 **Steps:**
 
 - Split data into train/test sets
-- Tune `max_depth`, `n_estimators` using `GridSearchCV`
+- Tune max_depth, n_estimators using GridSearchCV
 - Evaluate using:
   - Accuracy
   - Classification report (Precision, Recall, F1)
 - Visualize:
-  - Tree (`dt_class.png`)
+  - Tree (dt_class.png)
   - Feature importances
 
 ---
 
 ### 3. Regression
 
-**File:** `heart_regression.py`  
-**Goal:** Predict cholesterol level (`chol`)  
+**File:** heart_regression.py  
+**Goal:** Predict cholesterol level (chol)  
 **Models:**  
-- `DecisionTreeRegressor`  
-- `RandomForestRegressor`
+- DecisionTreeRegressor  
+- RandomForestRegressor
 
 **Steps:**
 
 - Use same split and scaling
-- Tune hyperparameters via `GridSearchCV`
+- Tune hyperparameters via GridSearchCV
 - Evaluate using:
   - Mean Absolute Error (MAE)
   - Mean Squared Error (MSE)
   - R² Score
 - Visualize:
-  - Tree (`decision_tree.png`)
+  - Tree (decision_tree)
   - Feature importances (bar plot)
 
 ---
@@ -98,7 +98,7 @@ This project applies **Decision Tree** and **Random Forest** models for **Classi
 | Metric              | Value                          |
 |---------------------|-------------------------------|
 | Accuracy            | High (~90% depending on split) |
-| Precision/Recall/F1 | Provided in `classification_report()` |
+| Precision/Recall/F1 | Provided in classification_report() |
 
 ### Regression (Random Forest Regressor)
 
@@ -114,14 +114,14 @@ This project applies **Decision Tree** and **Random Forest** models for **Classi
 
 ##  Visual Outputs
 
-- `dt_class.png`: Tree structure for classification.
+- dt_class.png: Tree structure for classification.
 - ![dt_class](https://github.com/user-attachments/assets/12613666-00c8-48a7-868c-7050e1420b04)
 
 - Feature importance charts for both classifier.
 - ![Random_forest(classifier)_feature Importance](https://github.com/user-attachments/assets/c7dd5a44-3c42-4308-b7be-1bd48d1a844e)
 
 
-- `desicion_tree.png`: Tree structure for Regression.
+- desicion_tree.png: Tree structure for Regression.
 - ![decision_tree](https://github.com/user-attachments/assets/77794986-eb5b-4444-8645-136a4be60daf)
 
 - Feature importance charts for both regressor.
@@ -139,7 +139,7 @@ Models can be adapted to make predictions on new patient data by formatting it t
 ##  Learning Outcome
 
 - Learned how tree-based models handle both classification and regression.
-- Understood how to tune hyperparameters using `GridSearchCV`.
+- Understood how to tune hyperparameters using GridSearchCV.
 - Interpreted feature importances to understand model behavior.
 - Compared simple (Decision Tree) vs ensemble (Random Forest) models.
 
